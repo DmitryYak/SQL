@@ -117,6 +117,16 @@ FROM book
 WHERE amount >= 5 AND amount <=14;
 
 Task 22.
+Вывести максимальнуюи минимальную цену книг каждого автора, кроме Есенина, количество экземпляров книг которого больше 10. 
+SELECT author,
+    MIN(price) AS Минимальная_цена,
+    MAX(price) AS Максимальная_цена
+FROM book
+WHERE author <> 'Есенин С.А.'
+GROUP BY author
+HAVING SUM(amount) > 10;
+
+Task 23.
 
 
  
