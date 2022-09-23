@@ -135,6 +135,15 @@ GROUP BY author
 HAVING Стоимость > 5000
 ORDER BY Стоимость DESC;
 
+Task 24.
+Придумайте один или несколько запросов к нашей таблице book, используя групповые функции. Проверьте, правильно ли они работают.
+SELECT author, round(avg(price*amount ),2) AS Средняя_стоимость_книг
+FROM book
+WHERE price < 600
+GROUP BY author
+HAVING author <> 'Булгаков М.А.'
+ORDER BY Средняя_стоимость_книг
+
 
 
 
