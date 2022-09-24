@@ -85,6 +85,7 @@ Task 15.
 Придумайте один или несколько запросов к нашей таблице book. Проверьте, правильно ли они работают.
 select title, author, price * amount as sum from book where author like 'Д%' order by 3;
 
+1.3 Запросы, групповые операции
 Task 16.
 Отобрать различные (уникальные) элементы столбца amount таблицы book.
 select distinct amount
@@ -143,6 +144,19 @@ WHERE price < 600
 GROUP BY author
 HAVING author <> 'Булгаков М.А.'
 ORDER BY Средняя_стоимость_книг
+
+1.4 Вложенные запросы
+Task 25.
+Вывести информацию (автора, название и цену) о  книгах, цены которых меньше или равны средней цене книг на складе. Информацию вывести в отсортированном по убыванию цены виде. Среднее вычислить как среднее по цене книги.
+SELECT author, title, price
+FROM book
+WHERE price <= (
+    SELECT AVG(price)
+    FROM book
+    )
+ORDER BY price DESC;
+
+
 
 
 
