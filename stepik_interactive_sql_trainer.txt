@@ -202,3 +202,4 @@ SELECT title, author, price,
 FROM book
 where price <700
 
+Task 31.
