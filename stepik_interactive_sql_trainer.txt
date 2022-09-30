@@ -194,15 +194,4 @@ SELECT title, author, amount,
 FROM book
 HAVING Заказ <> 0
 
-
-
-
-
- 
-
- 
- 
-
-
-
 Task 30.
