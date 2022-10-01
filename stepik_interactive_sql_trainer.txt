@@ -202,5 +202,22 @@ SELECT title, author, price,
 FROM book
 where price <700
 
-Task 31.
 1.5 Запросы корректировки данных
+Task 31.
+<<<<<<< HEAD
+1.5 Запросы корректировки данных
+=======
+Создать таблицу поставка (supply), которая имеет ту же структуру, что и таблиц book.
+
+Поле	Тип, описание
+supply_id	INT PRIMARY KEY AUTO_INCREMENT
+title	VARCHAR(50)
+author	VARCHAR(30)
+price	DECIMAL(8, 2)
+amount	INT
+
+CREATE TABLE supply 
+(supply_id INT PRIMARY KEY AUTO_INCREMENT,
+ title VARCHAR(50), author VARCHAR(30), 
+ price DECIMAL(8,2), amount INT) 
+>>>>>>> 71330adaa3b79cd6f1a4a4bf0b0d39c5b8da7923
