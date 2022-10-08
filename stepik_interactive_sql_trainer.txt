@@ -276,6 +276,9 @@ WHERE book.title = supply.title AND book.author = supply.author;
 
 SELECT * FROM book;
 
+Task 38.
+
+
 
 
 
