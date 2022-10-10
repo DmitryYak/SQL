@@ -301,3 +301,13 @@ WHERE amount < (
      FROM book);
 
 SELECT * FROM ordering;
+
+Task 40.
+Придумайте один или несколько запросов корректировки данных к  таблицамbook и  supply . Проверьте, правильно ли они работают.
+UPDATE book, supply
+SET book.amount = book.amount + supply.amount
+WHERE book.price < 500;
+
+SELECT * FROM book;
+SELECT * FROM supply;
+
