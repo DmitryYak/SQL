@@ -337,4 +337,7 @@ INT PRIMARY KEY AUTO_INCREMENT	VARCHAR(30)	VARCHAR(25)	DECIMAL(8,2)	DATЕ	DATE
 
 Task 41.
 Вывести из таблицы trip информацию о командировках тех сотрудников, фамилия которых заканчивается на букву «а», в отсортированном по убыванию даты последнего дня командировки виде. В результат включить столбцы name, city, per_diem, date_first, date_last.
-
+SELECT name, city, per_diem, date_first, date_last
+FROM trip
+WHERE name LIKE('%а %')
+ORDER BY date_last DESC
