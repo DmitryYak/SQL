@@ -341,3 +341,12 @@ SELECT name, city, per_diem, date_first, date_last
 FROM trip
 WHERE name LIKE('%а %')
 ORDER BY date_last DESC
+
+Task 42.
+Вывести в алфавитном порядке фамилии и инициалы тех сотрудников, которые были в командировке в Москве.
+SELECT DISTINCT name 
+FROM trip
+WHERE city IN ('Москва')
+ORDER BY name;
+
+
